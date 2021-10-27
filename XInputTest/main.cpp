@@ -93,18 +93,21 @@ int main(int argc, char* argv[]) {
                     // Get Current Time
                     QueryPerformanceCounter(&time_now);
 
-                    // Calculate Elapsed Time
+                    // Calculate Elapsed Time (in ms)
                     elapsed_time = (time_now.QuadPart - time_start.QuadPart) * 1000.0 / frequency.QuadPart;
 
-                    // Print Duration (cout seems to be faster than printf)
-                    sprintf_s(elapsed_text, "Duration %.2f ms", elapsed_time);
-                    cout << elapsed_text << endl;
+                    // Sanity Check
+                    if (elapsed_time > 0.5) {
+                        // Print Duration (cout seems to be faster than printf)
+                        sprintf_s(elapsed_text, "Duration %.2f ms", elapsed_time);
+                        cout << elapsed_text << endl;
 
-                    // Add Sample and Break Loop at the End
-                    if (index < MAX_SAMPLES) {
-                        values[index++] = elapsed_time;
-                    } else {
-                        break;
+                        // Add Sample and Break Loop at the End
+                        if (index < MAX_SAMPLES) {
+                            values[index++] = elapsed_time;
+                        } else {
+                            break;
+                        }
                     }
 
                     // Get Current Time

@@ -1,11 +1,15 @@
 # Xbox 360 Controller (XInput) Polling Rate Checker
-[![GitHub Release](https://img.shields.io/github/release/chrizonix/XInputTest.svg)](https://github.com/chrizonix/XInputTest/releases/tag/v1.0.0.2)
-[![Github Releases (by Release)](https://img.shields.io/github/downloads/chrizonix/XInputTest/v1.0.0.2/total.svg)](https://github.com/chrizonix/XInputTest/releases/tag/v1.0.0.2)
-[![Github Commits (since latest release)](https://img.shields.io/github/commits-since/chrizonix/XInputTest/latest.svg)](https://github.com/chrizonix/XInputTest/compare/v1.0.0.2...master)
+[![GitHub Release](https://img.shields.io/github/release/chrizonix/XInputTest.svg)](https://github.com/chrizonix/XInputTest/releases/tag/v1.2.0.0)
+[![Github Downloads](https://img.shields.io/github/downloads/chrizonix/XInputTest/total.svg)](https://github.com/chrizonix/XInputTest/releases/tag/v1.2.0.0)
+[![Github Commits (since latest release)](https://img.shields.io/github/commits-since/chrizonix/XInputTest/latest.svg)](https://github.com/chrizonix/XInputTest/compare/v1.2.0.0...master)
 [![GitHub Repo Size in Bytes](https://img.shields.io/github/repo-size/chrizonix/XInputTest.svg)](https://github.com/chrizonix/XInputTest)
 [![Github License](https://img.shields.io/github/license/chrizonix/XInputTest.svg)](LICENSE.md)
 
 Simple Tool to Check the Latency and Update Rate of a Xbox 360 Controller, or Virtual XInput Device (DualShock 3/4)
+
+## Changelog v1.2.0.0 ([Latest Version](https://github.com/chrizonix/XInputTest/releases/tag/v1.2.0.0))
+* Added Filter for Latencies below 0.5 ms
+* Added 64-bit Binaries
 
 ## Changelog v1.0.0.2 ([Download](https://github.com/chrizonix/XInputTest/releases/tag/v1.0.0.2))
 * Added Rapid Outlier Detection (thanks to Mahito Sugiyama)
